@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    font: 60px 'DM Mono', monospace;
+}
+
+:root{
+    --orange: -webkit-linear-gradient(45deg,rgba(255, 166, 0, 0.7), rgba(255, 68, 0, 0.87));
+    --gray: rgb(66, 66, 66);
+    --lightgray: rgb(207, 207, 207);
+}
+body{
+    background-color: var(--gray);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    height:100vh;
+}
+
+h1{
+    font: 30px 'DM Mono', monospace ;
+    color: gray;
+}
+
+button{
+    border: 1px solid rgb(0, 0, 0);
+    display:block;
+    width:150px;
+    height: 150px;
+    background-color:white;
+}
+
+button.lightgray-btn{
+    background-color: var(--lightgray);
+}
+
+#calculator{
+    border: solid black 3px;
+    background-color: white;
+}
+
+#display{
+    width: 610px;
+    height: 75px;
+    background-image: var(--orange);
+}
+
+
+#result{
+    font-size: 60px;
+    color:white;
+    text-align: right;
+    margin-right:40px;
+}
+
+.large-btn{
+    width:303px;
+}
+
+#AC-btn{
+    background: var(--orange);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+#equal-btn{
+    color:white;
+    background-image: var(--orange);
+}
+
+/* MOBILE SETTINGS */
+
+@media (max-width:600px){
+
+    button{
+        width:100px;
+        height: 100px;
+        font-size:50px;
+    }
+
+    #display{
+        width: 410px;
+        height: 90px;
+    }
+    
+    #result{
+        text-align: right;
+        margin-right:40px;
+    }
+    
+    .large-btn{
+        width:203px;
+    }
+}
+
+@media (max-width:400px){
+
+    button{
+        width:70px;
+        height: 70px;
+        font-size:40px;
+    }
+
+    #display{
+        width: 290px;
+        height: 80px;
+    }
+    
+    #result{
+        text-align: right;
+        margin-right:30px;
+    }
+    
+    .large-btn{
+        width:143px;
+    }
+}

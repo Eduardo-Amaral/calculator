@@ -1,0 +1,1 @@
+i made this project to train my skills in CSS and DOM manipulation(Js). It consist in a simple calculator,  with the basic operators.
